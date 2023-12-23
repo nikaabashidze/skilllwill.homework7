@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <title>Homework 7</title>
+</head>
+<body>
+
+
+    <div class="container" id="container">
+
+    <aside class="condition" id="condition" > 
+
+            <div id="condition1"> 
+                <p>setTimeout ფუნქცია იყენებს callback-ს, დაწერეთ მისი promise-ზე დადაფუძნებული ალტერნატივა მაგ: mySetTimeout(delay).then(...)</p>
+<pre style="color: yellow;">
+    
+  
+</pre>
+              
+                
+                
+                </div>
+            <div id="condition2">
+            
+
+            </div>
+            <div id="condition3">
+                <p>
+              </p>
+            </div>
+    
+    </aside>
+
+            <div  class="cont" id="cont"> 
+
+                <div class="buttons">
+                <button id="homework1">Homework 1</button>
+                <button id="homework3">Toy Factory</button>
+                </div>
+                <div class="back" id="back">
+                    <a  href="index.html"> <h6>Back</h6> </a>                  
+                </div>
+                
+
+                    
+                </div>
+                <div class="window" id="window1"></div>
+                <div class="window" id="window2"></div>
+
+
+
+
+                    <!-- win3-->
+                <div class="window" id="window3">
+
+                    <div class="toyfactory">
+                        <form id="timeform">
+                    
+                    
+                            <label for="maketime">Make Toys Timeout (sec):</label>
+                            <input type="number" id="maketime" name="maketime" placeholder="'3'">
+                            
+                            <label for="deliverytime">Delivery Toy Timeout (sec):</label>
+                            <input type="number" id="deliverytime" name="deliverytime"placeholder="'2'">
+                    
+                            <label for="selltime">Sell Toys Timeout (sec):</label>
+                            <input type="number" id="selltime" name="selltime" placeholder="'1'">
+                    
+                            <button id="startButton" class="button" type="button" onclick="startmaking()">Start</button>
+                            <br>
+                            
+                            <span id="resultMake"></span>
+                            <span id="resultDelivery"></span>
+                            <span id="resultSell"></span>
+                        </form>
+                    
+                        <div class="factorymarket">
+                    
+                            <div id="location1">
+                                <img id="factory" src="https://upload.wikimedia.org/wikipedia/commons/3/31/Industrial_factory.png">
+                            </div>
+                    
+                    
+                    
+                    
+                            <div id="location2">
+                                <div id="deliveryway">
+                                    <div id="car"></div>
+                                </div>
+                            </div>
+                    
+                    
+                    
+                    
+                            <div id="location3">
+                                <div id="toymarket"></div>
+                               </div>
+                    
+                    </div>
+
+
+
+
+
+
+                </div>
+               
+                </div>
+                    <!-- win3-->
+
+
+
+
+
+
+                    <aside class="functions" id="functions">
+
+
+                        <div id="function1">
+<pre style="color: yellow;">
+    
+    const mySetTimeout = (delay) => {
+     return new Promise((resolve, ) => {
+      setTimeout(() => {
+        resolve()
+      }, delay);
+    })
+  }
+  
+ 
+  mySetTimeout(2000)
+    .then(() => {
+      console.log("Ready")
+    })
+    .catch((error) => {
+      console.error(error);
+    })
+</pre>
+                       
+                                               </div>
+                                               
+                       
+                       
+                                              <div id="function2">
+                                     
+                           
+                       
+                                          
+                       
+                                              </div> 
+                       
+                       
+                       
+                                              <div id="function3">
+                       
+                       
+                       
+                       
+                                              </div> 
+                                   
+                                   </aside>
+                                   
+                               </div>
+          
+
+            
+    <script src="app.js"></script>
+</body>
+</html>
